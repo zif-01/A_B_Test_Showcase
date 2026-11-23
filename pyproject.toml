@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ab-test-showcase"
+version = "0.1.0"
+description = "Reproducible end-to-end A/B test portfolio project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "PyYAML>=6.0",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

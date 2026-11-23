@@ -1,0 +1,19 @@
+experiment:
+  seed: 20261117
+  baseline_conversion: 0.065
+  mde_absolute: 0.01
+  simulated_treatment_effect_absolute: 0.012
+  alpha: 0.05
+  power: 0.80
+  allocation_ratio: 1.0
+  eligible_users_per_day: 1500
+  minimum_duration_days: 7
+  average_order_value: 75.0
+  order_value_log_sigma: 0.9
+  checkout_error_rate_control: 0.025
+  checkout_error_rate_treatment: 0.026
+  maximum_checkout_error_increase: 0.005
+  bootstrap_iterations: 1000
+
+dataset:
+  kaggle_csv: null
